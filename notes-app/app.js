@@ -8,11 +8,19 @@
 
 // const validator = require('validator')
 // console.log(validator.isEmail("fathi@gmail.com"));
+import { add, subtract, multiply } from './imported.js';
 
-const chalk = require('chalk')
+// const chalk = require('chalk')
+// console.log(chalk.bold.blue.bgRed.inverse("success!"));
+
+// const getNotes = require('./notes.js');
+// console.log(getNotes("fathi"));
+
+console.log(add(5, 3));      
+console.log(subtract(10, 4)); 
+console.log(multiply(2, 6));
+
+import chalk from 'chalk';
 console.log(chalk.bold.blue.bgRed.inverse("success!"));
-
-const getNotes = require('./notes.js');
-console.log(getNotes("fathi"));
 
 

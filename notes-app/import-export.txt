@@ -1,0 +1,8 @@
+require:
+1. It is a synchronous call.
+2. Imports entire modules or specific parts of modules
+
+import
+1. It is asynchronous and is evaluated at runtime
+2. The path must be a string literal and cannot be dynamically determined.
+3. Allows named exports, making it more flexible in what is imported
