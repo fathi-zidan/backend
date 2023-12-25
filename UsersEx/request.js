@@ -7,7 +7,7 @@ const fetchUsingRequest = function () {
             console.log('Error fetching Chuck Norris joke:', error.message);
         } else {
             const fact = response.body.fact;
-            console.log("Cat Fact : ", fact)
+            console.log("Cat Fact : ", fact + '\n')
         }
     })
 
@@ -22,7 +22,7 @@ const fetchUsingAxios = async function () {
     try {
         const response = await axios.get(secondUrl);
         const data = response.data.value;
-        console.log("chucknorris joke : /n", data);
+        console.log("chucknorris joke :", data + '\n');
     } catch (err) {
         console.log(`There was an Error!${err}`);
     }
@@ -36,7 +36,7 @@ const fetchUsingNodeFetch = async () => {
     try {
         const response = await fetch(url);
         const data = await response.json(); // Parse JSON response
-        console.log("Cat Fact using node-fetch:\n", data.fact);
+        console.log("Cat Fact using node-fetch:", data.fact + '\n');
     } catch (err) {
         console.log(`There was an Error! ${err}`);
     }
