@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.6.2",
     "chalk": "^2.4.1",
+    "node-fetch": "^2.6.10",
+    "request": "^2.88.0",
     "uniqid": "^5.4.0",
     "validator": "^10.8.0",
     "yargs": "^17.7.2"
