@@ -61,6 +61,21 @@ yargs.command({
         users.updateUser(argv.id,argv.name,argv.email,argv.password)
 
     }
+});
+
+yargs.command({
+    command: 'read',
+    describe: "Get info about a specific user by its ID",
+    builder: {
+        id: {
+            describe: 'User ID',
+            demandOption: true,
+            type: 'string'
+        }
+    },
+    handler: function(argv){
+        users.readUser(argv.id);
+    }
 })
 
 yargs.parse();

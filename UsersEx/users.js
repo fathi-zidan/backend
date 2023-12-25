@@ -63,10 +63,22 @@ const updateUser = function (id, name, email, password) {
     }
 
 }
+const readUser = function(id){
+    const users = readUsers();
+    const user = users.find((user)=>user.id === id);
+    if(user){
+        console.log('User found:', user)
+        return user;
+    }
+    else{
+        console.log(chalk.red(`No User with the id ${id}`));
+    }
+}
 module.exports = {
     addUser,
     readUsers,
     writeUsers,
     deleteUser,
-    updateUser
+    updateUser,
+    readUser
 }
