@@ -1,0 +1,40 @@
+1. Koa:
+    Pros:
+        Developed by the same team behind Express, designed to be more lightweight.
+        Improved middleware handling with async/await support.
+        Modular and expressive with a minimalistic core.
+    Cons:
+        Smaller ecosystem compared to Express.
+
+2. Fastify:
+    Pros:
+        Extremely fast and efficient.
+        Focus on performance with low overhead.
+        Well-suited for building APIs.
+    Cons:
+        Smaller ecosystem compared to Express.
+
+3. NestJS:
+    Pros:
+        Built with TypeScript and follows a modular, Angular-like structure.
+        Scalable and suitable for large applications.
+        Uses decorators for easy-to-understand code.
+    Cons:
+        Steeper learning curve, especially for developers unfamiliar with TypeScript and Angular concepts.
+
+4. AdonisJS:
+    Pros:
+        Full-featured MVC framework.
+        Includes ORM, authentication, and other features out of the box.
+        Well-suited for building robust web applications.
+    Cons:
+        May be seen as too opinionated for some projects.
+
+5. Feathers:
+
+    Pros:
+        Microservices-friendly, real-time framework.
+        Comes with built-in support for data services and WebSocket communication.
+        Modular and extensible.
+    Cons:
+        Smaller community compared to more established frameworks.
