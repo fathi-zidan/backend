@@ -6,7 +6,7 @@ app.use(bodyParser.json());
 
 app.get('/movies', (req, res) => {
 
-    res.json(data.movies);
+    res.send(data.movies);
 
 });
 
@@ -16,13 +16,13 @@ app.get('/movies/:id', (req, res) => {
     if (!movie) {
         return res.send('Movie not found');
     }
-    res.json(movie);
+    res.send(movie);
 })
 
 app.post('/add-movie', (req, res) => {
     const newMovie = req.body;
     data.movies.push(newMovie);
-    res.json(newMovie);
+    res.send(newMovie);
 });
 
 app.put('/movies/:id', (req, res) => {

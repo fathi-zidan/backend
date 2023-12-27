@@ -8,4 +8,4 @@ server.get('/msg',(req,res)=>{
 
 server.listen(4747,()=>{
     console.log("express server listing on port 4747!");
-})
+});
