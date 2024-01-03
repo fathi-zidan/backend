@@ -2,7 +2,7 @@ import express from 'express';
 import {createUser,getAllUsers,getUser,updateUser,deleteUser} from '../controller/userController.js'
 import {createPost,getAllPosts,getSinglePost,updatePost,deletePost} from '../controller/postController.js'
 import {createComment,getAllComments,getCommentById,updateComment,deleteComment} from '../controller/commentController.js'
-
+import {createProduct} from '../controller/productController.js'
 const router = express.Router();
 
 router.post('/user',createUser);
@@ -23,6 +23,7 @@ router.get('/post/comment/:id',getCommentById)
 router.put('/post/comment/:id',updateComment)
 router.delete('/post/comment/:id',deleteComment)
 
+router.post('/product',createProduct)
 
 
 

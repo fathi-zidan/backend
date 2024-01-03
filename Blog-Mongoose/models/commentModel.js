@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
+import User from "./userModel.js";
+import Post from "./postsModel.js";
 
 const commentSchema = new mongoose.Schema({
     post: {
